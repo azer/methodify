@@ -1,6 +1,6 @@
 {
   "name": "methodify",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Take a set of functions and make them methods of specified object",
   "main": "index.js",
   "scripts": {
@@ -15,9 +15,9 @@
     "golang"
   ],
   "repository": {
-    "url": "git@github.com:azer\/methodify.git",
+    "url": "git@github.com:azer/methodify.git",
     "type": "git"
   },
-  "author": "Azer Ko\u00e7ulu <azer@kodfabrik.com>",
+  "author": "Azer Koçulu <azer@kodfabrik.com>",
   "license": "BSD"
 }
