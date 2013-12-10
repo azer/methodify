@@ -8,9 +8,7 @@ it('takes functions and sets methods on specified object', function(){
     tax: 2
   };
 
-  methodify(product, {
-    ignore: 666,
-    price: price,
+  methodify(product, { ignore: 666, price: price }, {
     withDiscount: withDiscount,
     withNoProfit: withNoProfit
   });
