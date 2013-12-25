@@ -1,7 +1,6 @@
 var methodify = require("./");
 
 it('takes functions and sets methods on specified object', function(){
-
   var product = {
     cost: 3,
     profit: 2,
@@ -28,6 +27,4 @@ it('takes functions and sets methods on specified object', function(){
   function withNoProfit (obj) {
     return obj.cost + obj.tax;
   }
-
-
 });
