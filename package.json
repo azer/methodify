@@ -1,6 +1,6 @@
 {
   "name": "methodify",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Take a set of functions and make them methods of specified object",
   "main": "index.js",
   "scripts": {
