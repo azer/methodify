@@ -1,6 +1,7 @@
+var test = require('prova');
 var methodify = require("./");
 
-it('takes functions and sets methods on specified object', function(){
+test('takes functions and sets methods on specified object', function (t) {
   var product = {
     cost: 3,
     profit: 2,
@@ -12,9 +13,10 @@ it('takes functions and sets methods on specified object', function(){
     withNoProfit: withNoProfit
   });
 
-  expect(product.price()).to.equal(7);
-  expect(product.withDiscount()).to.equal(5.5);
-  expect(product.ignore).to.not.exist;
+  t.plan(3)
+  t.equal(product.price(), 7);
+  t.equal(product.withDiscount(), 5.5);
+  t.notOk(product.ignore);
 
   function price (obj) {
     return obj.cost + obj.profit + obj.tax;
