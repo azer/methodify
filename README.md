@@ -11,9 +11,9 @@ $ npm install methodify
 ## Usage
 
 ```js
-methodify = require('methodify')
+var methodify = require('methodify')
 
-struct = {
+var struct = {
   foo: 123,
   bar: 456
 }
